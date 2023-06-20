@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kommentar-Formular</title>
+    <meta charset="utf-8">
+    <link rel="StyleSheet" type=text/css href="mystyle3.css" />
+</head>
+<header>
+    <a href="CUBRIC.html">
+        <img src="https://i.ibb.co/yPqgGZt/LOGO.png">
+    </a>
+</header>
+<body>
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+    
+            cursor.style.top = y + "px";
+            cursor.style.left = x + "px";
+        });
+    </script>
+    <h1><center>CONTACT FORMULAR</center></h1>
+    <form action="http://zuse1.efi.ohmportal.de:8000/json" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="comment">Kommentar:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        <input type="submit" value="Kommentar abschicken">
+    </form>
+</body>
+</html>

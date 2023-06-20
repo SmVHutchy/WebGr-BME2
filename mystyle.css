@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "AromeDisplay";
+  src: url("Arome Display.ttf");
+}
+
+.AromeDisplay {
+  font-family: "AromeDisplay";
+}
+
+@font-face {
+  font-family: "PPMonument";
+  src: url("PPMonumentExtended-Black.ttf");
+}
+
+body {
+  /* Hintergrundbild */
+  background-color: black;
+  cursor: none;
+}
+
+h1 {
+  font-family: "PPMonument";
+  text-transform: uppercase;
+  height: 50px;
+  padding: 40px;
+  font-size: 20px;
+  background-color: transparent;
+  color: antiquewhite;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "PPMonument";
+  text-transform: uppercase;
+  padding: 40px;
+  background-color: transparent;
+  color: antiquewhite;
+  text-align: center;
+}
+
+p,
+a {
+  font-size: 18px;
+  font-family: "PPMonument";
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 25px;
+  text-align: left;
+  border: 1px solid white;
+  color: antiquewhite;
+}
+
+th {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+td img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, .5);
+  color: #faebd7;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+tr {
+  font-family: "PPMonument";
+  text-transform: uppercase;
+  padding: 25px;
+}
+
+.cursor {
+  z-index: 999;
+  position: fixed;
+  background: #faebd7;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #2afce0, 0 0 60px #5779ac, 0 0 100px #22195552;
+  animation: colors 5s infinite;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+nav {
+  padding-bottom: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+nav ul li {
+  justify-content: center;
+  margin-right: 10px;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(to right, #e3c4b5, #c5e7ff);
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  transition: background 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(to right, #e1999a, #78d3f1);
+}
+.imu {
+  font-family: "PPMonument";
+  padding: 10px;
+  color: #faebd7;
+  text-align: center;
+}

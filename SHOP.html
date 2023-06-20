@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SHOP</title>
+    <meta charset="utf-8">
+    <link rel="StyleSheet" type=text/css href="mystyleshop.css" />
+</head>
+<body>
+    <div class="cursor"></div>
+        <script>
+            const cursor = document.querySelector(".cursor");
+            document.addEventListener("mousemove", (e) => {
+                let x = e.pageX;
+                let y = e.pageY;
+        
+                cursor.style.top = y + "px";
+                cursor.style.left = x + "px";
+            });
+        </script>
+    <header>
+        <a href="CUBRIC.html">
+            <img src="https://i.ibb.co/yPqgGZt/LOGO.png">
+        </a>
+    </header>
+
+    <main>
+        <br>
+        <h1>SHOP</h1>
+        <br>
+        <p>COMING SOON</p>
+        <div style="display: flex; justify-content: center;">
+            <iframe src="https://free.timeanddate.com/countdown/i8vps8ou/n1891/cf12/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pcfaebd7/tcfff/fs100/szw576/szh243/iso2023-06-30T00:00:00" allowtransparency="true" frameborder="0" width="197" height="52"></iframe>
+        </div>
+    </main>
+</body>
+</html>

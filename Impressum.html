@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Impressum</title>
+        <meta charset=utf-8>
+        <link rel="StyleSheet" type=text/css href="mystyleimpressum.css" />
+    </head>
+    <header>
+        <a href="CUBRIC.html">
+            <img src="https://i.ibb.co/yPqgGZt/LOGO.png">
+        </a>
+    </header>
+    <body>
+        <div class="cursor"></div>
+        <script>
+            const cursor = document.querySelector(".cursor");
+            document.addEventListener("mousemove", (e) => {
+                let x = e.pageX;
+                let y = e.pageY;
+        
+                cursor.style.top = y + "px";
+                cursor.style.left = x + "px";
+            });
+        </script>
+        <br />
+        <h1><center> IMPRESSUM</center></h1>
+        <br />
+        <p><center>Liam Moosburger</center></p>
+        <p><center>Liammoosburger@gmail.com</center></p>
+    </body>
+</html>

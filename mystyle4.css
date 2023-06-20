@@ -1,0 +1,122 @@
+body{
+    background-color:antiquewhite;
+    cursor: none;
+}
+header {
+background-color: transparent;
+padding: 10px;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+align-items: center;
+}
+header img {
+height: 100px;
+
+}
+.ascii-art { 
+top: 0;
+left: 0;
+align-items: center;
+display: flex;
+
+}
+h1{
+
+}
+.cursor {
+    z-index: 999;
+    position: fixed;
+    background: #1c1b1a;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2afce0, 0 0 60px #5779ac, 0 0 100px #22195552;
+    animation: colors 5s infinite;
+    }
+    
+    @keyframes colors {
+    0% {
+    filter: hue-rotate(0deg);
+    }
+    100% {
+    filter: hue-rotate(360deg);
+    }
+    }
+    .glass {
+        padding: 4000px;
+        flex-direction: column;
+        position: fixed;
+        width: 400px;
+        height: 1100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        overflow: hidden;
+        z-index: 1;
+      }
+      
+      .glass::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 48px;
+        color: rgba(255, 255, 255, 0.3); /* Farbe des Hintergrundtexts */
+        z-index: 1;
+      }
+      
+      .glass p {
+        z-index: 2;
+        color: rgb(3, 3, 3);
+        font-size: 3px;
+        text-align: center;
+        margin: 1;
+        padding: 100px;
+      }
+      .newglass {
+        padding: 40px;
+        position: fixed;
+        width: 300px;
+        height: 1100px;
+        top: 50%;
+        right: 0; /* Element an der rechten Seite */
+        transform: translate(0, -50%); /* Anpassung der Transformierung */
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 50px;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+      }
+      
+      .newglass::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 48px;
+        color: rgba(255, 255, 255, 0.3); /* Farbe des Hintergrundtexts */
+        z-index: -1;
+      }
+      .newglass p {
+        z-index: 2;
+        color: rgb(3, 3, 3);
+        font-size: 3px;
+        text-align: center;
+        margin: 1;
+        padding: 100px;
+      }
+      
+      
